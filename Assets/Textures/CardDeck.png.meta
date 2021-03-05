@@ -1,0 +1,1496 @@
+fileFormatVersion: 2
+guid: cda38016f690ebe4bb24532847eb76c6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8430985578977025789
+    second: CardDeck_0
+  - first:
+      213: 440666203521501684
+    second: CardDeck_1
+  - first:
+      213: 5044951399471242409
+    second: CardDeck_2
+  - first:
+      213: 6848675984678484133
+    second: CardDeck_3
+  - first:
+      213: 29468424247034797
+    second: CardDeck_4
+  - first:
+      213: -3279717568988907162
+    second: CardDeck_5
+  - first:
+      213: 3820431700096020060
+    second: CardDeck_6
+  - first:
+      213: -7377404993604502704
+    second: CardDeck_7
+  - first:
+      213: -8423231260006467354
+    second: CardDeck_8
+  - first:
+      213: 5562543194440641541
+    second: CardDeck_9
+  - first:
+      213: -8046433129841882764
+    second: CardDeck_10
+  - first:
+      213: 64312406797878545
+    second: CardDeck_11
+  - first:
+      213: -8625531999396554999
+    second: CardDeck_12
+  - first:
+      213: 4978832131240576441
+    second: CardDeck_13
+  - first:
+      213: -4426921316849071391
+    second: CardDeck_14
+  - first:
+      213: -239842195982105282
+    second: CardDeck_15
+  - first:
+      213: 3972633452249838582
+    second: CardDeck_16
+  - first:
+      213: -4068524317855994348
+    second: CardDeck_17
+  - first:
+      213: 8839029207027505686
+    second: CardDeck_18
+  - first:
+      213: -6129741451279636859
+    second: CardDeck_19
+  - first:
+      213: -7204215045643030603
+    second: CardDeck_20
+  - first:
+      213: 887201867057378570
+    second: CardDeck_21
+  - first:
+      213: 2894462768204808924
+    second: CardDeck_22
+  - first:
+      213: 2165559899476579344
+    second: CardDeck_23
+  - first:
+      213: -743904120729679251
+    second: CardDeck_24
+  - first:
+      213: -4997229144098705816
+    second: CardDeck_25
+  - first:
+      213: -821713265971618229
+    second: CardDeck_26
+  - first:
+      213: -1166218564504954205
+    second: CardDeck_27
+  - first:
+      213: 1260760650427614183
+    second: CardDeck_28
+  - first:
+      213: -6014675257773001222
+    second: CardDeck_29
+  - first:
+      213: -3729435997440147159
+    second: CardDeck_30
+  - first:
+      213: 5661242910440456970
+    second: CardDeck_31
+  - first:
+      213: 4565542091946821785
+    second: CardDeck_32
+  - first:
+      213: 7590052713354306432
+    second: CardDeck_33
+  - first:
+      213: -3479354005482737071
+    second: CardDeck_34
+  - first:
+      213: -1337154408328095279
+    second: CardDeck_35
+  - first:
+      213: 2286492639357985369
+    second: CardDeck_36
+  - first:
+      213: -4754644757182577252
+    second: CardDeck_37
+  - first:
+      213: 6021792763127608392
+    second: CardDeck_38
+  - first:
+      213: -1235448358019421462
+    second: CardDeck_39
+  - first:
+      213: 6262132748905008477
+    second: CardDeck_40
+  - first:
+      213: 7085207276473887796
+    second: CardDeck_41
+  - first:
+      213: -5042501638607379334
+    second: CardDeck_42
+  - first:
+      213: -2452687670908134969
+    second: CardDeck_43
+  - first:
+      213: -2093817314310644473
+    second: CardDeck_44
+  - first:
+      213: 6501206992342110419
+    second: CardDeck_45
+  - first:
+      213: -3151665931333394832
+    second: CardDeck_46
+  - first:
+      213: 2618645340144209268
+    second: CardDeck_47
+  - first:
+      213: 269036994065117796
+    second: CardDeck_48
+  - first:
+      213: -4355650445748271674
+    second: CardDeck_49
+  - first:
+      213: 1284101891144678681
+    second: CardDeck_50
+  - first:
+      213: 8613609572342176584
+    second: CardDeck_51
+  - first:
+      213: 8422227180347621209
+    second: CardDeck_52
+  - first:
+      213: 5578085994685285878
+    second: CardDeck_53
+  - first:
+      213: -318150923137769294
+    second: CardDeck_54
+  - first:
+      213: -2299151887365570042
+    second: CardDeck_55
+  - first:
+      213: -7533970714452407685
+    second: CardDeck_56
+  - first:
+      213: 4162176629045236406
+    second: CardDeck_57
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CardDeck_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 780
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30122a2094f1ffa80800000000000000
+      internalID: -8430985578977025789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 780
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f94b6dc39f8d1600800000000000000
+      internalID: 440666203521501684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 780
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9acd79a8194430640800000000000000
+      internalID: 5044951399471242409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 780
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a87280b5826b0f50800000000000000
+      internalID: 6848675984678484133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 780
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da3c55f2061b86000800000000000000
+      internalID: 29468424247034797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 780
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 669fec86f3a1c72d0800000000000000
+      internalID: -3279717568988907162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 780
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5e6dd4c366e40530800000000000000
+      internalID: 3820431700096020060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 780
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05bb208de313e9990800000000000000
+      internalID: -7377404993604502704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_8
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 780
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e839561ccbaa1b80800000000000000
+      internalID: -8423231260006467354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_9
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 780
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50ca660509f123d40800000000000000
+      internalID: 5562543194440641541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_10
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 780
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47907d243b3555090800000000000000
+      internalID: -8046433129841882764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_11
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 780
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11586d11bcb74e000800000000000000
+      internalID: 64312406797878545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_12
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 780
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9071439b854fb4880800000000000000
+      internalID: -8625531999396554999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 585
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b545e2c17d581540800000000000000
+      internalID: 4978832131240576441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_14
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 585
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ea4b94648a6092c0800000000000000
+      internalID: -4426921316849071391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_15
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 585
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3546522bc8ebacf0800000000000000
+      internalID: -239842195982105282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_16
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 585
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f37f20b311a12730800000000000000
+      internalID: 3972633452249838582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_17
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 585
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41ea72a50b2b987c0800000000000000
+      internalID: -4068524317855994348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_18
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 585
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a5d2c8b3a8aaa70800000000000000
+      internalID: 8839029207027505686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_19
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 585
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5866d7770a8ceeaa0800000000000000
+      internalID: -6129741451279636859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_20
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 585
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bf2ce6e59c750c90800000000000000
+      internalID: -7204215045643030603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_21
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 585
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a05b402c569ff4c00800000000000000
+      internalID: 887201867057378570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_22
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 585
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd2017a5d823b2820800000000000000
+      internalID: 2894462768204808924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_23
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 585
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 014d124414d9d0e10800000000000000
+      internalID: 2165559899476579344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_24
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 585
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6a45f0c42f1da5f0800000000000000
+      internalID: -743904120729679251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_25
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 585
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86e64c4e19646aab0800000000000000
+      internalID: -4997229144098705816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 390
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4e19826320b894f0800000000000000
+      internalID: -821713265971618229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_27
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 390
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aa573cf462c0dfe0800000000000000
+      internalID: -1166218564504954205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_28
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 390
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e3478bb12f1f7110800000000000000
+      internalID: 1260760650427614183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_29
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 390
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af5fb1d58b4978ca0800000000000000
+      internalID: -6014675257773001222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_30
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 390
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 921860048b16e3cc0800000000000000
+      internalID: -3729435997440147159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_31
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 390
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a038008be66c09e40800000000000000
+      internalID: 5661242910440456970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_32
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 390
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9988595e7501c5f30800000000000000
+      internalID: 4565542091946821785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_33
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 390
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08329fd9ab8455960800000000000000
+      internalID: 7590052713354306432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_34
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 390
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1527e5767f9d6bfc0800000000000000
+      internalID: -3479354005482737071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_35
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 390
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d991c17629717de0800000000000000
+      internalID: -1337154408328095279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_36
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 390
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9526a7ee0f04bbf10800000000000000
+      internalID: 2286492639357985369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_37
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 390
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9585f6d8cb140eb0800000000000000
+      internalID: -4754644757182577252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_38
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 390
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8443d3dfc94b19350800000000000000
+      internalID: 6021792763127608392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 195
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeaa9e9934ecadee0800000000000000
+      internalID: -1235448358019421462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_40
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 195
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5dc2d29e8097e650800000000000000
+      internalID: 6262132748905008477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_41
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 195
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43c2d3a9a76b35260800000000000000
+      internalID: 7085207276473887796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_42
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 195
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a746b7bd97f650ab0800000000000000
+      internalID: -5042501638607379334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_43
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 195
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c95a86ee8d46fdd0800000000000000
+      internalID: -2452687670908134969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_44
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 195
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d93f30f3441f2e0800000000000000
+      internalID: -2093817314310644473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_45
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 195
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d056dd805de83a50800000000000000
+      internalID: 6501206992342110419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_46
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 195
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07e1c20a8880344d0800000000000000
+      internalID: -3151665931333394832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_47
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 195
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d070c001c475420800000000000000
+      internalID: 2618645340144209268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_48
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 195
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 462b0be78bfcbb300800000000000000
+      internalID: 269036994065117796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_49
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 195
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c5076f2ffe9d83c0800000000000000
+      internalID: -4355650445748271674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_50
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 195
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91df515dddb02d110800000000000000
+      internalID: 1284101891144678681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_51
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 195
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84b1c59e440b98770800000000000000
+      internalID: 8613609572342176584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95f72466ff2c1e470800000000000000
+      internalID: 8422227180347621209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_53
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f54ccf78a7596d40800000000000000
+      internalID: 5578085994685285878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_54
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b02969cb63b59bf0800000000000000
+      internalID: -318150923137769294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_55
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60208e43a85c710e0800000000000000
+      internalID: -2299151887365570042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_56
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7a4ed84d85f17790800000000000000
+      internalID: -7533970714452407685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CardDeck_57
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 128
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b29caa879503c930800000000000000
+      internalID: 4162176629045236406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
