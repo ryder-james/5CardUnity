@@ -5,16 +5,18 @@ using UnityEngine;
 public class PlayerServerComponent : MonoBehaviour
 {
     [SerializeField] int port;
-    [SerializeField] bool start;
+    [SerializeField] bool start = true;
     SimpleHttpServer server;
-
+    private string randomPlayerData = "This is player data that is accessible from the server thread";
+    //private Card card;
     void Start()
     {
         if(start)
         {
             server = new SimpleHttpServer(port);
+            server.RegisterPostAction("bet", Bet);
             server.Start();
-            server.RegisterGetAction("bet", Bet);
+            //card = GetComponent<Card>();
         }
         
     }
@@ -33,8 +35,13 @@ public class PlayerServerComponent : MonoBehaviour
     }
 
 
-    public string Bet()
+    public string Bet(string jsonIn)
     {
-        return "{\"Bet\": \"Do it you won't\"}";
+        //certain functions can not be called from this callback (particularly unity functions like GetComponent<>(), since it gets called from the server's thread
+
+        Debug.Log("Data Received from POST: " + jsonIn);
+
+        return "{\"Bet\": \"Do it you won't\"}\n" + randomPlayerData;
+            //+ '\n' + card.rank.ToString();
     }
 }
