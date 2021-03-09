@@ -7,6 +7,7 @@ public class PlayerServerComponent : MonoBehaviour
     [SerializeField] int port;
     [SerializeField] bool start = true;
     SimpleHttpServer server;
+    int data = 0;
     private string randomPlayerData = "This is player data that is accessible from the server thread";
     //private Card card;
     void Start()
@@ -38,9 +39,10 @@ public class PlayerServerComponent : MonoBehaviour
     public string Bet(string jsonIn)
     {
         //certain functions can not be called from this callback (particularly unity functions like GetComponent<>(), since it gets called from the server's thread
-
-        Debug.Log("Data Received from POST: " + jsonIn);
-
+        
+        Debug.Log("Data Received from POST: " + jsonIn + "\nMoreData: " + data);
+        data++;
+        Debug.Log("Data has changed" + data);
         return "{\"Bet\": \"Do it you won't\"}\n" + randomPlayerData;
             //+ '\n' + card.rank.ToString();
     }

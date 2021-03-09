@@ -14,10 +14,10 @@ public class TournamentComponent : MonoBehaviour
         string temp = Directory.GetCurrentDirectory();
         tournamentProcess = new Process();
         ProcessStartInfo startInfo = new ProcessStartInfo();
-        startInfo.WorkingDirectory = Directory.GetCurrentDirectory() + "StreamingAssets/poker-holdem-engine/";
+        //startInfo.WorkingDirectory = Directory.GetCurrentDirectory() + "StreamingAssets/poker-holdem-engine/";
         //startInfo.WindowStyle = ProcessWindowStyle.Hidden;
         startInfo.FileName = "cmd.exe";
-        startInfo.Arguments = "/C node 5Card/live.js --run";
+        startInfo.Arguments = "/C node StreamingAssets/poker-holdem-engine/5Card/live.js --run";
         tournamentProcess.StartInfo = startInfo;
         tournamentProcess.Start();
         tournamentProcess.WaitForExit();
