@@ -10,15 +10,18 @@ public class TournamentServerComponent : MonoBehaviour
     void Start()
     {
         server = new SimpleHttpServer(port);
-        server.RegisterPostAction("changegamestate", StartShowdown);
+        server.RegisterPostAction("changegamestate", ChangeGameState);
         server.Start();
     }
 
 
-    private string StartShowdown(string gamestate)
+    private string ChangeGameState(string gamestate)
     {
-        //change to showdown state here
+        //change gamestate
+        //translate gamestate somehow
+        //get the UI ready for the players to start playing
 
+        Debug.Log(gamestate);
 
         return "{}";
     }
