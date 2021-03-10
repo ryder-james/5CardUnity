@@ -22,6 +22,7 @@ public class Game : MonoBehaviour
     [SerializeField] public Text rightMoney;
     [SerializeField] public Text leftMoney;
     [SerializeField] public Text topMoney;
+    [SerializeField] public CardMommy cardMommy;
 
     private int[] storeCards = new int[5];
     private bool flipped = true;

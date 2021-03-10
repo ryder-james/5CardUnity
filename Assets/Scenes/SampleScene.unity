@@ -2773,6 +2773,7 @@ MonoBehaviour:
   rightMoney: {fileID: 726863174}
   leftMoney: {fileID: 662808169}
   topMoney: {fileID: 383881776}
+  cardMommy: {fileID: 65143916}
 --- !u!1 &881503675
 GameObject:
   m_ObjectHideFlags: 0
