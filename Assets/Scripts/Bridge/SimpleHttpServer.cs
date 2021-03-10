@@ -152,7 +152,10 @@ public class SimpleHttpServer
     {
         byte[] bytes = StringToByteArray(output);
 
-        stream.Write(bytes, 0, bytes.Length);
+        if(stream.CanWrite)
+        {
+            stream.Write(bytes, 0, bytes.Length);
+        }
 
         stream.Flush();
         stream.Close();

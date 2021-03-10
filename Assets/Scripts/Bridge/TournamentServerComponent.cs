@@ -6,6 +6,8 @@ public class TournamentServerComponent : MonoBehaviour
 {
     [SerializeField] int port = 7899;
     SimpleHttpServer server;
+    GameStateSerializable readIn;
+    string gamestate;
 
     void Start()
     {
@@ -14,15 +16,24 @@ public class TournamentServerComponent : MonoBehaviour
         server.Start();
     }
 
+    private void Update()
+    {
+        if(gamestate != null)
+        {
+            int x = 0;
+            readIn = JsonUtility.FromJson<GameStateSerializable>(gamestate);
+
+        }
+    }
+
 
     private string ChangeGameState(string gamestate)
     {
         //change gamestate
         //translate gamestate somehow
         //get the UI ready for the players to start playing
-
-        Debug.Log(gamestate);
-
+        Debug.Log("GAMESTATE MY DUDE: " + gamestate);
+        this.gamestate = gamestate;
         return "{}";
     }
     
