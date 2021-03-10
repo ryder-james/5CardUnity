@@ -4947,6 +4947,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7252686509884990072, guid: 83d9ea1a41ff827478cee08f3e4c1302,
         type: 3}
+      propertyPath: suit
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7252686509884990072, guid: 83d9ea1a41ff827478cee08f3e4c1302,
+        type: 3}
       propertyPath: mainCard
       value: 1
       objectReference: {fileID: 0}
@@ -6512,7 +6517,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2118148282}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 875801962}
+        m_MethodName: Discard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2118148282
 MonoBehaviour:
   m_ObjectHideFlags: 0

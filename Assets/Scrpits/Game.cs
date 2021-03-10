@@ -71,4 +71,19 @@ public class Game : MonoBehaviour
         }
     }
 
+    public void Discard()
+    {
+        List<int> cards = new List<int>();
+        int counter = 0;
+
+        foreach(Card card in mainHand)
+        {
+            if (card.Selected)
+            {
+                cards.Add(counter);
+            }
+            counter++;
+        }
+    }
+
 }
