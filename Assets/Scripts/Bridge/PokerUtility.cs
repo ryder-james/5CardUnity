@@ -5,16 +5,9 @@ using UnityEngine;
 using System.Net;
 
 
-public class PokerJSON : MonoBehaviour
+public static class PokerUtility
 {
 
-    void Start()
-    {
-        Card toJson = GetComponent<Card>();
-        string json = ToJson(toJson);
-
-        Card fromTest = FromJSON(json, gameObject);
-    }
 
     //take in the card type that Carson makes, convert it into a serializable card, then serialize.
     public static string ToJson(Card card)
@@ -40,6 +33,16 @@ public class PokerJSON : MonoBehaviour
 
         return card;
 
+    }
+
+    public static Card ConvertSerializedCard(SerializableCard inCard)
+    {
+        Card newCard = new Card();
+
+        newCard.suit = ConvertSuitFromSerialized(inCard.type);
+        newCard.rank = ConvertRankFromSerialized(inCard.rank);
+
+        return newCard;
     }
 
     private static Suit ConvertSuitFromSerialized(string suit)

@@ -27,6 +27,25 @@ public class Game : MonoBehaviour
     private int[] storeCards = new int[5];
     private bool flipped = true;
 
+    public void UpdateGame(GameStateSerializable gamestate)
+    {
+        for(int i = 0; i < players.Length; i++)
+        {
+            Player player = players[i];
+            SerializablePlayer inPlayer = gamestate.players[i];
+            //convert players' hands
+            for(int j = 0; j < player.hand.Length; j++)
+            {
+                player.hand[j] = PokerUtility.ConvertSerializedCard(inPlayer.cards[j]);
+            }
+            //update players' money
+            player.money = inPlayer.chips;
+
+            //update other data and then the AI
+        }
+    }
+
+
     public void Flip()
     {
         if(flipped)
