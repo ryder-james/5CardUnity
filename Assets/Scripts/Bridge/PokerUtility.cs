@@ -5,7 +5,7 @@ using UnityEngine;
 using System.Net;
 
 
-public static class PokerUtility
+public class PokerUtility : MonoBehaviour
 {
 
 
