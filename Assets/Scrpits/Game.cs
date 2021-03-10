@@ -22,6 +22,7 @@ public class Game : MonoBehaviour
     [SerializeField] public Text rightMoney;
     [SerializeField] public Text leftMoney;
     [SerializeField] public Text topMoney;
+    [SerializeField] public CardMommy cardMommy;
     public RoundState currentRoundState;
 
     private int[] storeCards = new int[5];
@@ -44,7 +45,6 @@ public class Game : MonoBehaviour
             //update other data and then the AI
         }
     }
-
 
     public void Flip()
     {
@@ -88,6 +88,21 @@ public class Game : MonoBehaviour
                 }
             }
             flipped = true;
+        }
+    }
+
+    public void Discard()
+    {
+        List<int> cards = new List<int>();
+        int counter = 0;
+
+        foreach(Card card in mainHand)
+        {
+            if (card.Selected)
+            {
+                cards.Add(counter);
+            }
+            counter++;
         }
     }
 

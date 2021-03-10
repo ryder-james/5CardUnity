@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CardMommy : MonoBehaviour
 {
+    public bool hilightCards { get; set; } = true;
 
     private GameObject save;
 
@@ -11,7 +12,7 @@ public class CardMommy : MonoBehaviour
     {
         Vector2 mousePos = Input.mousePosition;
         Ray ray = Camera.main.ScreenPointToRay(mousePos);
-        if (Physics.Raycast(ray, out RaycastHit hit))
+        if (Physics.Raycast(ray, out RaycastHit hit) && hilightCards)
         {
             GameObject card = hit.collider.gameObject;
             if (card.tag == "Card")
