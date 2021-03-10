@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.U2D;
 
-[ExecuteInEditMode]
 public class Card : MonoBehaviour
 {
     [SerializeField] public int rank = 1;
