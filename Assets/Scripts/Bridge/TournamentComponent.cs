@@ -14,12 +14,12 @@ public class TournamentComponent : MonoBehaviour
         string temp = Directory.GetCurrentDirectory();
         tournamentProcess = new Process();
         ProcessStartInfo startInfo = new ProcessStartInfo();
-        startInfo.WorkingDirectory = Directory.GetCurrentDirectory() + "/StreamingAssets/poker-holdem-engine/";
+        Directory.SetCurrentDirectory(Application.streamingAssetsPath + "/poker-holdem-engine/");
         //startInfo.WindowStyle = ProcessWindowStyle.Hidden;
         startInfo.FileName = "cmd.exe";
-        startInfo.Arguments = "/C node 5Card/live.js --run";
-        tournamentProcess.StartInfo = startInfo;
-        tournamentProcess.Start();
+        startInfo.Arguments = "/K node 5Card/live.js --run";
+        tournamentProcess = Process.Start(startInfo);
+        Directory.SetCurrentDirectory(temp);
         //tournamentProcess.WaitForExit();
     }
 
@@ -31,6 +31,8 @@ public class TournamentComponent : MonoBehaviour
     private void OnDestroy()
     {
         if(tournamentProcess != null)
-        tournamentProcess.Kill();
+        {
+            tournamentProcess.Kill();
+        }
     }
 }

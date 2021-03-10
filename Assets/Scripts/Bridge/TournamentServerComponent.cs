@@ -24,7 +24,7 @@ public class TournamentServerComponent : MonoBehaviour
         gamestateJson = json;
         gamestate = JsonUtility.FromJson<GameStateSerializable>(json);
         //get the UI ready for the players to start playing
-        game.currentRoundState = (RoundState)gamestate.newState;
+        //game.currentRoundState = (RoundState)gamestate.newState;
 
         return "{}";
     }
