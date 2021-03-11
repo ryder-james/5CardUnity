@@ -26,6 +26,7 @@ public class Game : MonoBehaviour
     [SerializeField] public InputField betInputField;
     public RoundState currentRoundState;
     public bool gamestateChanged = false;
+    public bool playerChanged = false;
     public GameStateSerializable gamestate;
     [SerializeField] public Sprite open;
     [SerializeField] public Sprite closed;
@@ -45,34 +46,35 @@ public class Game : MonoBehaviour
         if(gamestateChanged)
         {
             gamestateChanged = false;
-            UpdateGame();
+            ChangeRound();
+        }
+        if(playerChanged)
+        {
+            playerChanged = false;
+            ChangeTurn();
         }
     }
 
-    public void UpdateGame()
+    public void ChangeTurn()
     {
-        if(currentRoundState == RoundState.AssignPot)
+        Player player = players[currentPlayer];
+        SerializablePlayer inPlayer = gamestate.players[currentPlayer];
+
+        //update player's money
+        player.money = inPlayer.chips;
+        mainMoney.text = players[currentPlayer].money.ToString();
+
+        //convert main player's hand
+        for (int j = 0; j < mainHand.Length; j++)
         {
-            Player player = players[currentPlayer];
-            SerializablePlayer inPlayer = gamestate.players[currentPlayer];
-
-            //update player's money
-            player.money = inPlayer.chips;
-            mainMoney.text = players[currentPlayer].money.ToString();
-
+            mainHand[j].rank = PokerUtility.ConvertRankFromSerialized(inPlayer.cards[j].rank);
+            mainHand[j].suit = PokerUtility.ConvertSuitFromSerialized(inPlayer.cards[j].type);
         }
-        else if(currentRoundState == RoundState.Draw)
-        {
-            //convert main player's hand
-            Player player = players[currentPlayer];
-            SerializablePlayer inPlayer = gamestate.players[currentPlayer]; 
+    }
 
-            for (int j = 0; j < mainHand.Length; j++)
-            {
-                mainHand[j].rank = PokerUtility.ConvertRankFromSerialized(inPlayer.cards[j].rank);
-                mainHand[j].suit = PokerUtility.ConvertSuitFromSerialized(inPlayer.cards[j].type);
-            }
-        }
+    public void ChangeRound()
+    {
+        
         
 
 
@@ -167,6 +169,12 @@ public class Game : MonoBehaviour
     public void Bet(Text amount)
     {
         betPopup.SetActive(false);
+    }
+
+    public void ChangePlayer()
+    {
+        currentPlayer = (currentPlayer + 1) % players.Length;
+        playerChanged = true;
     }
 
 }
