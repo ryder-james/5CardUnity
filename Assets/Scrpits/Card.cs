@@ -21,7 +21,7 @@ public class Card : MonoBehaviour
 
     private void Update()
     {
-        //sprite.sprite = Cards[rank + ((int)suit * 13) - 1];
+        sprite.sprite = Cards[rank + ((int)suit * 13) - 1];
     }
 
     public void Lock(BaseEventData bed)

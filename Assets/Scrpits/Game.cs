@@ -25,6 +25,8 @@ public class Game : MonoBehaviour
     [SerializeField] public CardMommy cardMommy;
     [SerializeField] public InputField betInputField;
     public RoundState currentRoundState;
+    public bool gamestateChanged = false;
+    public GameStateSerializable gamestate;
 
     private int currentPlayer = 0;
     private int[] storeCards = new int[5];
@@ -35,23 +37,42 @@ public class Game : MonoBehaviour
         betInputField.enabled = false;
 
     }
-
-    public void UpdateGame(GameStateSerializable gamestate)
+    public void Update()
     {
-        for(int i = 0; i < players.Length; i++)
+        if(gamestateChanged)
         {
-            Player player = players[i];
-            SerializablePlayer inPlayer = gamestate.players[i];
-            //convert players' hands
-            for(int j = 0; j < player.hand.Length; j++)
-            {
-                player.hand[j] = PokerUtility.ConvertSerializedCard(inPlayer.cards[j]);
-            }
-            //update players' money
-            player.money = inPlayer.chips;
-
-            //update other data and then the AI
+            gamestateChanged = false;
+            UpdateGame();
         }
+    }
+
+    public void UpdateGame()
+    {
+        if(currentRoundState == RoundState.AssignPot)
+        {
+            Player player = players[currentPlayer];
+            SerializablePlayer inPlayer = gamestate.players[currentPlayer];
+
+            //update player's money
+            player.money = inPlayer.chips;
+            mainMoney.text = players[currentPlayer].money.ToString();
+
+        }
+        else if(currentRoundState == RoundState.Draw)
+        {
+            //convert main player's hand
+            Player player = players[currentPlayer];
+            SerializablePlayer inPlayer = gamestate.players[currentPlayer]; 
+
+            for (int j = 0; j < mainHand.Length; j++)
+            {
+                mainHand[j].rank = PokerUtility.ConvertRankFromSerialized(inPlayer.cards[j].rank);
+                mainHand[j].suit = PokerUtility.ConvertSuitFromSerialized(inPlayer.cards[j].type);
+            }
+        }
+        
+
+
     }
 
     public void Flip()
