@@ -35,6 +35,7 @@ public class Game : MonoBehaviour
     private int currentPlayer = 0;
     private int[] storeCards = new int[5];
     private bool flipped = true;
+    private bool blindWarning = false;
 
     public void Start()
     {
@@ -78,15 +79,70 @@ public class Game : MonoBehaviour
             leftMoney.text = players[(currentPlayer + 3) % 4].money.ToString();
 
             pot.text = gamestate.pot.ToString();
+
+            if (player.BetAmount == 0)
+            {
+                fold.gameObject.SetActive(false);
+                callCheck.GetComponentInChildren<Text>().text = "Check";
+                raiseBet.GetComponentInChildren<Text>().text = "Bet";
+            }
+            else
+            {
+                fold.gameObject.SetActive(true);
+                callCheck.GetComponentInChildren<Text>().text = "Call";
+                raiseBet.GetComponentInChildren<Text>().text = "Raise";
+            }
         }
+
         
     }
 
     public void ChangeRound()
     {
         ChangeTurn();
-        
 
+        if (blindWarning)
+        {
+            blindIncrease.gameObject.SetActive(true);
+        }
+        else
+        {
+            blindIncrease.gameObject.SetActive(false);
+        }
+
+        switch (currentRoundState)
+        {
+            case RoundState.Deal:
+                discard.gameObject.SetActive(false);
+                fold.gameObject.SetActive(false);
+                callCheck.gameObject.SetActive(false);
+                raiseBet.gameObject.SetActive(false);
+                break;
+            case RoundState.AssignPot:
+                discard.gameObject.SetActive(false);
+                fold.gameObject.SetActive(false);
+                callCheck.gameObject.SetActive(false);
+                raiseBet.gameObject.SetActive(false);
+                break;
+            case RoundState.PreDraw:
+                discard.gameObject.SetActive(false);
+                fold.gameObject.SetActive(true);
+                callCheck.gameObject.SetActive(true);
+                raiseBet.gameObject.SetActive(true);
+                break;
+            case RoundState.PostDraw:
+                discard.gameObject.SetActive(false);
+                fold.gameObject.SetActive(true);
+                callCheck.gameObject.SetActive(true);
+                raiseBet.gameObject.SetActive(true);
+                break;
+            case RoundState.Draw:
+                discard.gameObject.SetActive(true);
+                fold.gameObject.SetActive(true);
+                callCheck.gameObject.SetActive(false);
+                raiseBet.gameObject.SetActive(false);
+                break;
+        }
 
     }
 
@@ -189,4 +245,3 @@ public class Game : MonoBehaviour
     }
 
 }
-    
