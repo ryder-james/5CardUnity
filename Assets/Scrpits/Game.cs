@@ -25,6 +25,7 @@ public class Game : MonoBehaviour
     [SerializeField] public CardMommy cardMommy;
     [SerializeField] public Sprite open;
     [SerializeField] public Sprite closed;
+    [SerializeField] public GameObject betPopup;
 
     private int[] storeCards = new int[5];
     private bool flipped = true;
@@ -89,6 +90,16 @@ public class Game : MonoBehaviour
             }
             counter++;
         }
+    }
+
+    public void OpenBetMenu()
+    {
+        betPopup.SetActive(true);
+    }
+
+    public void Bet(Text amount)
+    {
+        betPopup.SetActive(false);
     }
 
 }
