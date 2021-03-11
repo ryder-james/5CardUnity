@@ -49,10 +49,12 @@ public class PlayerServerComponent : MonoBehaviour {
 		Debug.Log(discards);
 
 		string discardString = "[";
-		foreach (int i in discards) {
-			discardString += $"{i}, ";
+		if (discards.Length > 0) {
+			foreach (int i in discards) {
+				discardString += $"{i}, ";
+			}
+			discardString = discardString.Substring(0, discardString.Length - 2);
 		}
-		discardString = discardString.Substring(0, discardString.Length - 2);
 		discardString += "]";
 
 		Debug.Log(discardString);
