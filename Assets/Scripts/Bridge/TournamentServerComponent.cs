@@ -30,5 +30,9 @@ public class TournamentServerComponent : MonoBehaviour
 
         return "{}";
     }
-    
+
+	private void OnDestroy() {
+        server.Stop();
+	}
+
 }
