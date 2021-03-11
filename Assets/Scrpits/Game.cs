@@ -23,11 +23,18 @@ public class Game : MonoBehaviour
     [SerializeField] public Text leftMoney;
     [SerializeField] public Text topMoney;
     [SerializeField] public CardMommy cardMommy;
+    [SerializeField] public InputField betInputField;
     public RoundState currentRoundState;
 
     private int currentPlayer = 0;
     private int[] storeCards = new int[5];
     private bool flipped = true;
+
+    public void Start()
+    {
+        betInputField.enabled = false;
+
+    }
 
     public void UpdateGame(GameStateSerializable gamestate)
     {
@@ -107,6 +114,25 @@ public class Game : MonoBehaviour
         }
 
         players[currentPlayer].Discards = cards.ToArray();
+    }
+
+    public void ShowBet()
+    {
+        betInputField.enabled = true;
+        
+    }
+
+    public void SubmitBet()
+    {
+        int betAmount;
+        if(int.TryParse(betInputField.text, out betAmount))
+        {
+            if(betAmount <= players[currentPlayer].money)
+            {
+                betInputField.text = "";
+                betInputField.enabled = false;
+            }
+        }
     }
 
 }
