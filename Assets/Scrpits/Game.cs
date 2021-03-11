@@ -30,11 +30,13 @@ public class Game : MonoBehaviour
     [SerializeField] public Sprite open;
     [SerializeField] public Sprite closed;
     [SerializeField] public GameObject betPopup;
+    [SerializeField] public InputField betInputField;
 
     private int currentPlayer = 0;
     private int[] storeCards = new int[5];
     private bool flipped = true;
     private bool blindWarning = false;
+    private bool showPopup = false;
 
     public void Start()
     {
@@ -52,6 +54,17 @@ public class Game : MonoBehaviour
             playerChanged = false;
             ChangeTurn();
         }
+        if(showPopup)
+        {
+            if(Input.GetKeyDown(KeyCode.Return))
+            {
+                Bet(betInputField.GetComponentInChildren<Text>());
+            }
+            if(Input.GetKeyDown(KeyCode.Escape))
+            {
+                CloseBetMenu();
+            }
+        }
     }
 
     public void ChangeTurn()
@@ -66,10 +79,14 @@ public class Game : MonoBehaviour
             mainMoney.text = players[currentPlayer].money.ToString();
 
             //convert main player's hand
+            Vector3 temp = new Vector3();
             for (int j = 0; j < mainHand.Length; j++)
             {
                 mainHand[j].rank = PokerUtility.ConvertRankFromSerialized(inPlayer.cards[j].rank);
                 mainHand[j].suit = PokerUtility.ConvertSuitFromSerialized(inPlayer.cards[j].type);
+                temp = mainHand[j].gameObject.transform.position;
+                temp.y = 0;
+                mainHand[j].gameObject.transform.position = temp;
             }
 
             rightMoney.text = players[(currentPlayer + 1) % 4].money.ToString();
@@ -92,7 +109,11 @@ public class Game : MonoBehaviour
             }
         }
 
-        
+        if(flipped)
+        {
+            Flip();
+        }
+
     }
 
     public void ChangeRound()
@@ -212,7 +233,15 @@ public class Game : MonoBehaviour
 
     public void OpenBetMenu()
     {
+        betInputField.text = "";
         betPopup.SetActive(true);
+        betInputField.enabled = true;
+        showPopup = true;
+    }
+    public void CloseBetMenu()
+    {
+        betPopup.SetActive(false);
+        showPopup = false;
     }
 
     public void Bet(Text amount)
