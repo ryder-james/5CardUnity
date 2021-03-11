@@ -85,7 +85,7 @@ public class Game : MonoBehaviour
                 mainHand[j].rank = PokerUtility.ConvertRankFromSerialized(inPlayer.cards[j].rank);
                 mainHand[j].suit = PokerUtility.ConvertSuitFromSerialized(inPlayer.cards[j].type);
                 temp = mainHand[j].gameObject.transform.position;
-                temp.y = 0;
+                temp.y = -18;
                 mainHand[j].gameObject.transform.position = temp;
             }
 
