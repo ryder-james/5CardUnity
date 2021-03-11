@@ -64,6 +64,20 @@ public class Game : MonoBehaviour {
             mainHand[j].rank = PokerUtility.ConvertRankFromSerialized(inPlayer.cards[j].rank);
             mainHand[j].suit = PokerUtility.ConvertSuitFromSerialized(inPlayer.cards[j].type);
         }
+
+        if (player.BetAmount == 0)
+        {
+            fold.gameObject.SetActive(false);
+            callCheck.GetComponentInChildren<Text>().text = "Check";
+            raiseBet.GetComponentInChildren<Text>().text = "Bet";
+        }
+        else
+        {
+            fold.gameObject.SetActive(true);
+            callCheck.GetComponentInChildren<Text>().text = "Call";
+            raiseBet.GetComponentInChildren<Text>().text = "Raise";
+        }
+
     }
 
     public void ChangeRound() {
