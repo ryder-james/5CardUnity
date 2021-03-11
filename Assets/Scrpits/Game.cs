@@ -157,7 +157,8 @@ public class Game : MonoBehaviour
                 mainHand[i].suit = Suit.CLUB;
                 mainHand[i].rank = 15;
             }
-            flipped = false; ;
+            flipped = false;
+            flipButton.GetComponent<Image>().sprite = closed;
         }
         else
         {
@@ -188,6 +189,7 @@ public class Game : MonoBehaviour
                 }
             }
             flipped = true;
+            flipButton.GetComponent<Image>().sprite = open;
         }
     }
 
