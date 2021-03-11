@@ -4,72 +4,60 @@ using System.Threading.Tasks;
 using UnityEngine;
 
 
-public class PlayerServerComponent : MonoBehaviour
-{
-    [SerializeField] int port;
-    [SerializeField] bool start = true;
-    [SerializeField] private Player player = null;
-    SimpleHttpServer server;
-    int data = 0;
-    private string randomPlayerData = "This is player data that is accessible from the server thread";
-    //private Card card;
-    void Start()
-    {
-        if(start)
-        {
-            server = new SimpleHttpServer(port);
-            server.RegisterPostAction("discard", Discard);
-            server.RegisterPostAction("bet", Bet);
-            server.RegisterGetAction("", Root);
-            server.RegisterGetAction("version", Version);
-            server.Start();
-            //card = GetComponent<Card>();
-        }
-        
-    }
-    private void OnDestroy()
-    {
-        if(server != null)
-        {
-            server.Stop();
-        }
-    }
+public class PlayerServerComponent : MonoBehaviour {
+	[SerializeField] int port;
+	[SerializeField] private Player player = null;
+	SimpleHttpServer server;
 
-    private string Root()
-    {
-        //call player method here
-        return "";
-    }
+	//private Card card;
+	void Start() {
+		server = new SimpleHttpServer(port);
+		server.RegisterPostAction("discard", Discard);
+		server.RegisterPostAction("bet", Bet);
+		server.RegisterGetAction("", Root);
+		server.RegisterGetAction("version", Version);
+		server.Start();
 
-    private string Version()
-    {
-        return "";
-    }
-
-    private string Bet(string jsonIn)
-    {
-        //certain functions can not be called from this callback (particularly unity functions like GetComponent<>(), since it gets called from the server's thread
-        
-        Debug.Log("Data Received from POST: " + jsonIn + "\nMoreData: " + data);
-        data++;
-        Debug.Log("Data has changed" + data);
-        return "90";
-    }
-
-    private string Discard(string jsonIn)
-    {
-        int[] discards = player.GetDiscards();
-        Debug.Log(discards);
-
-        string discardString = "[";
-        foreach (int i in discards) {
-            discardString += $"{i}, ";
+	}
+	private void OnDestroy() {
+		if (server != null) {
+			server.Stop();
 		}
-        discardString = discardString.Substring(0, discardString.Length - 2);
-        discardString += "]";
+	}
 
-        Debug.Log(discardString);
+	private string Root() {
+		//call player method here
+		return "";
+	}
 
-        return discardString;
-    }
+	private string Version() {
+		return "";
+	}
+
+	private string Bet(string jsonIn) {
+		var sPlayer = JsonUtility.FromJson<SerializablePlayer>(jsonIn);
+		player.MinimumRaiseAmount = sPlayer.minimumRaiseAmount;
+		player.CallAmount = sPlayer.callAmount;
+		//certain functions can not be called from this callback (particularly unity functions like GetComponent<>(), since it gets called from the server's thread
+		int bet = player.GetBet();
+		Debug.Log(bet);
+
+		return bet.ToString();
+	}
+
+	private string Discard(string jsonIn) {
+		int[] discards = player.GetDiscards();
+		Debug.Log(discards);
+
+		string discardString = "[";
+		foreach (int i in discards) {
+			discardString += $"{i}, ";
+		}
+		discardString = discardString.Substring(0, discardString.Length - 2);
+		discardString += "]";
+
+		Debug.Log(discardString);
+
+		return discardString;
+	}
 }
