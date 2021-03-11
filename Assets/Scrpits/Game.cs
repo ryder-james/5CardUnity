@@ -34,6 +34,7 @@ public class Game : MonoBehaviour {
     private int currentPlayer = 0;
     private int[] storeCards = new int[5];
     private bool flipped = true;
+    private bool blindWarning = false;
 
     public void Start() {
         betInputField.enabled = false;
@@ -67,8 +68,48 @@ public class Game : MonoBehaviour {
 
     public void ChangeRound() {
 
+        if (blindWarning)
+        {
+            blindIncrease.gameObject.SetActive(true);
+        }
+        else
+        {
+            blindIncrease.gameObject.SetActive(false);
+        }
 
-
+        switch (currentRoundState)
+        {
+            case RoundState.Deal:
+                discard.gameObject.SetActive(false);
+                fold.gameObject.SetActive(false);
+                callCheck.gameObject.SetActive(false);
+                raiseBet.gameObject.SetActive(false);
+                break;
+            case RoundState.AssignPot:
+                discard.gameObject.SetActive(false);
+                fold.gameObject.SetActive(false);
+                callCheck.gameObject.SetActive(false);
+                raiseBet.gameObject.SetActive(false);
+                break;
+            case RoundState.PreDraw:
+                discard.gameObject.SetActive(false);
+                fold.gameObject.SetActive(true);
+                callCheck.gameObject.SetActive(true);
+                raiseBet.gameObject.SetActive(true);
+                break;
+            case RoundState.PostDraw:
+                discard.gameObject.SetActive(false);
+                fold.gameObject.SetActive(true);
+                callCheck.gameObject.SetActive(true);
+                raiseBet.gameObject.SetActive(true);
+                break;
+            case RoundState.Draw:
+                discard.gameObject.SetActive(true);
+                fold.gameObject.SetActive(true);
+                callCheck.gameObject.SetActive(false);
+                raiseBet.gameObject.SetActive(false);
+                break;
+        }
 
     }
 
