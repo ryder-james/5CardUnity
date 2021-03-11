@@ -27,6 +27,9 @@ public class Game : MonoBehaviour
     public RoundState currentRoundState;
     public bool gamestateChanged = false;
     public GameStateSerializable gamestate;
+    [SerializeField] public Sprite open;
+    [SerializeField] public Sprite closed;
+    [SerializeField] public GameObject betPopup;
 
     private int currentPlayer = 0;
     private int[] storeCards = new int[5];
@@ -154,6 +157,16 @@ public class Game : MonoBehaviour
                 betInputField.enabled = false;
             }
         }
+    }
+
+    public void OpenBetMenu()
+    {
+        betPopup.SetActive(true);
+    }
+
+    public void Bet(Text amount)
+    {
+        betPopup.SetActive(false);
     }
 
 }
