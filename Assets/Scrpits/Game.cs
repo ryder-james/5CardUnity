@@ -39,7 +39,7 @@ public class Game : MonoBehaviour
 
     public void Start()
     {
-        //betInputField.enabled = false;
+        betInputField.enabled = false;
 
     }
     public void Update()
