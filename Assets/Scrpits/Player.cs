@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -10,11 +11,13 @@ public class Player : MonoBehaviour
 
     public int[] Discards { get; set; } = null;
 
-    public IEnumerable GetDiscards() {
+    public int[] GetDiscards() {
         while (Discards == null) {
-            yield return null;
+            Debug.Log("null");
 		}
 
-        yield return Discards;
+        int[] discards = Discards;
+        Discards = null;
+        return discards;
 	}
 }

@@ -38,7 +38,7 @@ public class Game : MonoBehaviour
 
     public void Start()
     {
-        betInputField.enabled = false;
+        //betInputField.enabled = false;
 
     }
     public void Update()
@@ -57,30 +57,34 @@ public class Game : MonoBehaviour
 
     public void ChangeTurn()
     {
-        Player player = players[currentPlayer];
-        SerializablePlayer inPlayer = gamestate.players[currentPlayer];
-
-        //update player's money
-        player.money = inPlayer.chips;
-        mainMoney.text = players[currentPlayer].money.ToString();
-
-        //convert main player's hand
-        for (int j = 0; j < mainHand.Length; j++)
+        if(gamestate.players != null && gamestate.players.Length >= 4)
         {
-            mainHand[j].rank = PokerUtility.ConvertRankFromSerialized(inPlayer.cards[j].rank);
-            mainHand[j].suit = PokerUtility.ConvertSuitFromSerialized(inPlayer.cards[j].type);
+            Player player = players[currentPlayer];
+            SerializablePlayer inPlayer = gamestate.players[currentPlayer];
+
+            //update player's money
+            player.money = inPlayer.chips;
+            mainMoney.text = players[currentPlayer].money.ToString();
+
+            //convert main player's hand
+            for (int j = 0; j < mainHand.Length; j++)
+            {
+                mainHand[j].rank = PokerUtility.ConvertRankFromSerialized(inPlayer.cards[j].rank);
+                mainHand[j].suit = PokerUtility.ConvertSuitFromSerialized(inPlayer.cards[j].type);
+            }
+
+            rightMoney.text = players[(currentPlayer + 1) % 4].money.ToString();
+            topMoney.text = players[(currentPlayer + 2) % 4].money.ToString();
+            leftMoney.text = players[(currentPlayer + 3) % 4].money.ToString();
+
+            pot.text = gamestate.pot.ToString();
         }
-
-        rightMoney.text = players[(currentPlayer + 1) % 4].money.ToString();
-        topMoney.text = players[(currentPlayer + 2) % 4].money.ToString();
-        leftMoney.text = players[(currentPlayer + 3) % 4].money.ToString();
-
-        pot.text = gamestate.pot.ToString();
+        
     }
 
     public void ChangeRound()
     {
-        
+        ChangeTurn();
         
 
 
@@ -136,7 +140,7 @@ public class Game : MonoBehaviour
         List<int> cards = new List<int>();
         int counter = 0;
 
-        foreach(Card card in mainHand)
+        foreach (Card card in mainHand)
         {
             if (card.Selected)
             {
@@ -146,6 +150,7 @@ public class Game : MonoBehaviour
         }
 
         players[currentPlayer].Discards = cards.ToArray();
+        ChangePlayer();
     }
 
     public void ShowBet()
@@ -179,8 +184,9 @@ public class Game : MonoBehaviour
 
     public void ChangePlayer()
     {
-        currentPlayer = (currentPlayer + 1) % players.Length;
+        currentPlayer = (currentPlayer + 1) % 4;
         playerChanged = true;
     }
 
 }
+    

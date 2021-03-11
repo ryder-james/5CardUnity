@@ -152,7 +152,7 @@ public class SimpleHttpServer
     {
         byte[] bytes = StringToByteArray(output);
 
-        if(stream.CanWrite)
+        if(stream != null && stream.CanWrite && bytes != null && bytes.Length > 0)
         {
             stream.Write(bytes, 0, bytes.Length);
         }
