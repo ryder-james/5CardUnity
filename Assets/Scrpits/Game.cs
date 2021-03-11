@@ -60,7 +60,7 @@ public class Game : MonoBehaviour
         {
             
             SerializablePlayer inPlayer = gamestate.players[currentPlayer];
-
+            Debug.Log(JsonUtility.ToJson(inPlayer));
             //update player's money
             players[currentPlayer].money = inPlayer.chips;
             mainMoney.text = players[currentPlayer].money.ToString();
