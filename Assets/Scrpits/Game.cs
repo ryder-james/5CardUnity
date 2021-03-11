@@ -84,9 +84,10 @@ public class Game : MonoBehaviour
             {
                 mainHand[j].rank = PokerUtility.ConvertRankFromSerialized(inPlayer.cards[j].rank);
                 mainHand[j].suit = PokerUtility.ConvertSuitFromSerialized(inPlayer.cards[j].type);
-                temp = mainHand[j].gameObject.transform.position;
-                temp.y = -18;
-                mainHand[j].gameObject.transform.position = temp;
+                cardMommy.LetGo();
+                //temp = mainHand[j].gameObject.transform.position;
+                //temp.y = -18;
+                //mainHand[j].gameObject.transform.position = temp;
             }
 
             rightMoney.text = players[(currentPlayer + 1) % 4].money.ToString();

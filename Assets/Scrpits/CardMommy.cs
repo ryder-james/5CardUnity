@@ -50,7 +50,7 @@ public class CardMommy : MonoBehaviour
         }
     }
 
-    private void LetGo()
+    public void LetGo()
     {
         if (save)
         {
