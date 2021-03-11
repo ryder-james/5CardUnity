@@ -27,6 +27,7 @@ public class TournamentServerComponent : MonoBehaviour
         game.currentRoundState = (RoundState)gamestate.newState;
         game.gamestate = gamestate;
         game.gamestateChanged = true;
+        Debug.Log("Changing gamestate to: " + game.currentRoundState.ToString());
 
         return "{}";
     }

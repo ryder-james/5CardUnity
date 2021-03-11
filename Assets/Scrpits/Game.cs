@@ -56,13 +56,13 @@ public class Game : MonoBehaviour
 
     public void ChangeTurn()
     {
-        if(gamestate.players != null && gamestate.players.Length >= 4)
+        if(gamestate.players != null)
         {
-            Player player = players[currentPlayer];
+            
             SerializablePlayer inPlayer = gamestate.players[currentPlayer];
 
             //update player's money
-            player.money = inPlayer.chips;
+            players[currentPlayer].money = inPlayer.chips;
             mainMoney.text = players[currentPlayer].money.ToString();
 
             //convert main player's hand
@@ -78,7 +78,7 @@ public class Game : MonoBehaviour
 
             pot.text = gamestate.pot.ToString();
 
-            if (player.BetAmount == 0)
+            if (players[currentPlayer].BetAmount == 0)
             {
                 fold.gameObject.SetActive(false);
                 callCheck.GetComponentInChildren<Text>().text = "Check";
