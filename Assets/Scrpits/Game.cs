@@ -23,10 +23,9 @@ public class Game : MonoBehaviour
     [SerializeField] public Text leftMoney;
     [SerializeField] public Text topMoney;
     [SerializeField] public CardMommy cardMommy;
-    [SerializeField] public Sprite open;
-    [SerializeField] public Sprite closed;
     public RoundState currentRoundState;
 
+    private int currentPlayer = 0;
     private int[] storeCards = new int[5];
     private bool flipped = true;
 
@@ -59,8 +58,7 @@ public class Game : MonoBehaviour
                 mainHand[i].suit = Suit.CLUB;
                 mainHand[i].rank = 15;
             }
-            flipped = false;
-            flipButton.GetComponent<Image>().sprite = closed;
+            flipped = false; ;
         }
         else
         {
@@ -91,7 +89,6 @@ public class Game : MonoBehaviour
                 }
             }
             flipped = true;
-            flipButton.GetComponent<Image>().sprite = open;
         }
     }
 
@@ -108,6 +105,8 @@ public class Game : MonoBehaviour
             }
             counter++;
         }
+
+        players[currentPlayer].Discards = cards.ToArray();
     }
 
 }

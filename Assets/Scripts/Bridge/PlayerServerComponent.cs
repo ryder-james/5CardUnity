@@ -7,6 +7,7 @@ public class PlayerServerComponent : MonoBehaviour
 {
     [SerializeField] int port;
     [SerializeField] bool start = true;
+    [SerializeField] private Player player = null;
     SimpleHttpServer server;
     int data = 0;
     private string randomPlayerData = "This is player data that is accessible from the server thread";
@@ -56,7 +57,12 @@ public class PlayerServerComponent : MonoBehaviour
 
     private string Discard(string jsonIn)
     {
-
+        IEnumerable result = player.GetDiscards();
+        while (result == null) {
+            Debug.Log("null!");
+            result = player.GetDiscards();
+		}
+        Debug.Log(result);
 
         return "[1, 2]";
     }
