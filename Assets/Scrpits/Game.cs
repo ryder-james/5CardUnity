@@ -107,6 +107,7 @@ public class Game : MonoBehaviour
         }
 
         players[currentPlayer].Discards = cards.ToArray();
+        currentPlayer = (currentPlayer + 1) % players.Length;
     }
 
 }

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 
@@ -57,13 +58,18 @@ public class PlayerServerComponent : MonoBehaviour
 
     private string Discard(string jsonIn)
     {
-        IEnumerable result = player.GetDiscards();
-        while (result == null) {
-            Debug.Log("null!");
-            result = player.GetDiscards();
-		}
-        Debug.Log(result);
+        int[] discards = player.GetDiscards();
+        Debug.Log(discards);
 
-        return "[1, 2]";
+        string discardString = "[";
+        foreach (int i in discards) {
+            discardString += $"{i}, ";
+		}
+        discardString = discardString.Substring(0, discardString.Length - 2);
+        discardString += "]";
+
+        Debug.Log(discardString);
+
+        return discardString;
     }
 }
