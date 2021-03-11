@@ -171,7 +171,7 @@ public class Game : MonoBehaviour
         {
             for(int i = 0; i < 5; i++)
             {
-                storeCards[i] = mainHand[i].rank + ((int)mainHand[i].suit * 13 - 1);
+                storeCards[i] = mainHand[i].rank + ((int)mainHand[i].suit * 13) - 1;
 
                 mainHand[i].suit = Suit.CLUB;
                 mainHand[i].rank = 15;
