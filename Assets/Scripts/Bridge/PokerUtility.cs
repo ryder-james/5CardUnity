@@ -45,7 +45,7 @@ public class PokerUtility : MonoBehaviour
         return newCard;
     }
 
-    private static Suit ConvertSuitFromSerialized(string suit)
+    public static Suit ConvertSuitFromSerialized(string suit)
     {
         Suit convertedSuit = Suit.CLUB;
         switch(suit)
@@ -64,7 +64,7 @@ public class PokerUtility : MonoBehaviour
         return convertedSuit;
     }
 
-    private static int ConvertRankFromSerialized(string rank)
+    public static int ConvertRankFromSerialized(string rank)
     {
         int newRank;
         //if our parse fails, we need to convert royalty
