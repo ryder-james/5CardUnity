@@ -70,6 +70,12 @@ public class Game : MonoBehaviour
             mainHand[j].rank = PokerUtility.ConvertRankFromSerialized(inPlayer.cards[j].rank);
             mainHand[j].suit = PokerUtility.ConvertSuitFromSerialized(inPlayer.cards[j].type);
         }
+
+        rightMoney.text = players[(currentPlayer + 1) % 4].money.ToString();
+        topMoney.text = players[(currentPlayer + 2) % 4].money.ToString();
+        leftMoney.text = players[(currentPlayer + 3) % 4].money.ToString();
+
+        pot.text = gamestate.pot.ToString();
     }
 
     public void ChangeRound()
