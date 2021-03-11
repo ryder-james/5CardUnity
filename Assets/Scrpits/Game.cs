@@ -23,7 +23,6 @@ public class Game : MonoBehaviour
     [SerializeField] public Text leftMoney;
     [SerializeField] public Text topMoney;
     [SerializeField] public CardMommy cardMommy;
-    [SerializeField] public InputField betInputField;
     public RoundState currentRoundState;
     public bool gamestateChanged = false;
     public bool playerChanged = false;
@@ -39,7 +38,6 @@ public class Game : MonoBehaviour
 
     public void Start()
     {
-        betInputField.enabled = false;
 
     }
     public void Update()
@@ -211,24 +209,6 @@ public class Game : MonoBehaviour
         ChangePlayer();
     }
 
-    public void ShowBet()
-    {
-        betInputField.enabled = true;
-        
-    }
-
-    public void SubmitBet()
-    {
-        int betAmount;
-        if(int.TryParse(betInputField.text, out betAmount))
-        {
-            if(betAmount <= players[currentPlayer].money)
-            {
-                betInputField.text = "";
-                betInputField.enabled = false;
-            }
-        }
-    }
 
     public void OpenBetMenu()
     {
@@ -238,6 +218,12 @@ public class Game : MonoBehaviour
     public void Bet(Text amount)
     {
         betPopup.SetActive(false);
+        int parsed = 0;
+        int.TryParse(amount.text, out parsed);
+
+        players[currentPlayer].BetAmount = parsed;
+        ChangePlayer();
+
     }
 
     public void ChangePlayer()

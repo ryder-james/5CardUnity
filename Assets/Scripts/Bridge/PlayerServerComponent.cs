@@ -26,12 +26,11 @@ public class PlayerServerComponent : MonoBehaviour {
 	}
 
 	private string Root() {
-		//call player method here
-		return "";
+		return "{\"Root\": \"page\"}";
 	}
 
 	private string Version() {
-		return "";
+		return "{\"Version\": \"PAGE\"";
 	}
 
 	private string Bet(string jsonIn) {
