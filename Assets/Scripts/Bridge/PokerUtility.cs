@@ -72,6 +72,9 @@ public class PokerUtility : MonoBehaviour
         {
             switch(rank)
             {
+                case "A":
+                    newRank = 1;
+                    break;
                 case "J":
                     newRank = 11;
                     break;

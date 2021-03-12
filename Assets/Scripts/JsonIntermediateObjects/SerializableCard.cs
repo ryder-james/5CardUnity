@@ -21,6 +21,9 @@ public struct SerializableCard
             string royalLetter;
             switch(card.rank)
             {
+                case 1:
+                    royalLetter = "A";
+                    break;
                 case 11:
                     royalLetter = "J";
                     break;
